@@ -1,0 +1,10 @@
+<html>
+<body>
+
+    <h1>hello world this is Home page</h1>
+    {% for obj in Tag_name %}
+    <a href="{% url 'detail' id=obj.id %}">JOB_TITLE: {{ obj.job_title }}</a><br/>
+    TAG_NAME: {{ obj.tag_name }}<br/><br/><br/>
+    {% endfor %}  
+</body>
+</html>
